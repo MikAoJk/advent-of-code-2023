@@ -1,9 +1,9 @@
-name: Build and test
+name: Build
 on: [push]
 
 jobs:
   build:
-    name: Checkout code and test, clean build
+    name: Checkout code and clean build
     runs-on: ubuntu-latest
     steps:
       - name: Setup java
@@ -27,9 +27,6 @@ jobs:
             ${{ runner.os }}-gradle-wrapper-
       - name: Make gradlew executable
         run: chmod +x ./gradlew
-      - name: Run tests
-        run: |
-          ./gradlew test --stacktrace
       - name: Run clean build
         run: |
           ./gradlew clean build

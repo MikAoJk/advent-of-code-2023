@@ -1,10 +1,10 @@
 # advent-of-code-2023
+https://adventofcode.com/2023
 
 ## Technologies used
 * Kotlin
 * Gradle
 * JDK 21
-* Junit
 
 ## Local development started
 
