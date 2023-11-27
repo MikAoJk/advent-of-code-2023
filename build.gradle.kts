@@ -1,5 +1,5 @@
 group = "io.github.MikAoJk"
-version = "1.0.0" //This will never change. See GitHub releases for releases of artifact
+version = "1.0.0"
 
 val junitJupiterVersion = "5.10.1"
 val kotlinVersion = "1.9.21"
@@ -17,6 +17,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
 
     testImplementation("org.junit.jupiter:junit-jupiter:$junitJupiterVersion")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks {
