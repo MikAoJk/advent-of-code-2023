@@ -41,15 +41,15 @@ data class WordOrder(
 
 fun replaceLettersWithDigit(calibration: String): String {
     val wordOrderList: List<WordOrder> = mutableListOf(
-        WordOrder("one", calibration.indexOf("one"), "1"),
-        WordOrder("two", calibration.indexOf("two"), "2"),
-        WordOrder("three", calibration.indexOf("three"), "3"),
-        WordOrder("four", calibration.indexOf("four"), "4"),
-        WordOrder("five", calibration.indexOf("five"), "5"),
-        WordOrder("six", calibration.indexOf("six"), "6"),
-        WordOrder("seven", calibration.indexOf("seven"), "7"),
-        WordOrder("eight", calibration.indexOf("eight"), "8"),
-        WordOrder("nine", calibration.indexOf("nine"), "9")
+        WordOrder("one", calibration.indexOf("one"), "one1one"),
+        WordOrder("two", calibration.indexOf("two"), "two2two"),
+        WordOrder("three", calibration.indexOf("three"), "three3three"),
+        WordOrder("four", calibration.indexOf("four"), "four4four"),
+        WordOrder("five", calibration.indexOf("five"), "five5five"),
+        WordOrder("six", calibration.indexOf("six"), "six6six"),
+        WordOrder("seven", calibration.indexOf("seven"), "seven7seven"),
+        WordOrder("eight", calibration.indexOf("eight"), "eight8eight"),
+        WordOrder("nine", calibration.indexOf("nine"), "nine9nine")
     )
 
     val wordHits = wordOrderList
